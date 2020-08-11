@@ -14,10 +14,12 @@ Expected result:
 Should throw exception after 5s, but waits forever. This problem does not exist in Lettuce, so it must be caused by Micronaut-Redis
 
 ## How this project is created
+```
 sdk u micronaut 2.0.1
 micronaut create-app --lang=groovy test-redis-timeout
 cd test-redis-timeout
 mn create-controller Test
+```
 
 Add the following dependency to build.gradle:
 `implementation("io.micronaut.redis:micronaut-redis-lettuce")`
