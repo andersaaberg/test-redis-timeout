@@ -1,0 +1,6 @@
+micronaut:
+  application:
+    name: testRedisTimeout
+redis:
+  uri: redis://localhost/1 # or redis://password@localhost
+  timeout: 5s
